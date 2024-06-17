@@ -1,0 +1,289 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+}
+
+.container {
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+}
+
+.logo {
+  max-width: 10%;
+  height: auto;
+}
+
+.nav {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.nav a:hover {
+  color: red;
+}
+
+#check {
+  display: none;
+}
+
+.checkbtn {
+  font-size: 25px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-item {
+  margin-left: 20px;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: white;
+  font-size: 1em;
+}
+
+@media (max-width: 768px) {
+  .nav-list {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .nav-item {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .logo {
+    max-width: 100px;
+  }
+
+  .checkbtn {
+    display: block;
+  }
+
+  .nav-list {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #2c3e50;
+    text-align: center;
+    top: 15%;
+    left: 100%;
+    transition: all 0.5s;
+  }
+
+  #check:checked ~ ul {
+    left: 0%;
+    display: block;
+  }
+
+  .nav-item {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  .nav-item a {
+    font-size: 20px;
+  }
+
+#check:checked ~ .checkbtn{
+  color:#ff0606;
+}
+
+}
+  body {
+    display: flex;
+    background-color: rgb(240, 232, 232);
+    font-family: "Roboto Condensed", sans-serif;
+  }
+
+  .seccion1 {
+    display: flex;
+    background-color: rgb(145, 143, 143);
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+  }
+
+  .acerca-de {
+    text-align: right;
+    padding: 1%;
+  }
+  .acerca-imagen {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+  }
+
+  .Imagen-Jose {
+    display: flex;
+    width: 50%;
+    height: auto;
+    border-radius: 5%;
+  }
+  .seccion2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+  }
+
+  .Logo-seccion2 {
+    display: flex;
+    border-radius: 5%;
+    width: 100%;
+    height: auto;
+  }
+
+  .seccion3 {
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+
+  h1 {
+    text-align: left;
+    margin-bottom: 1%;
+    margin-left: 1%;
+  }
+
+  .seccion-trabajos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+  }
+
+  .Trabajos {
+    flex: 1 1 30%;
+    margin: 1%;
+    padding: 1%;
+    background-color: #007bff;
+    color: white;
+    text-align: left;
+    border-radius: 5px;
+  }
+
+  .Imagen-Trabajos {
+    max-width: 20%;
+    height: auto;
+    border-radius: 5%;
+    margin: 0 auto;
+  }
+
+  h4 {
+    padding-bottom: 2%;
+  }
+
+  .Trabajos p {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 2%;
+  }
+
+  @media (max-width: 768px) {
+    .seccion3 {
+      flex: 1 1 calc(50% - 20px);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .seccion3 {
+      flex: 1 1 100%;
+    }
+  }
+
+  footer {
+    flex: auto;
+    background-color: rgb(226, 209, 209);
+    padding: 0px;
+    margin: 0px;
+    padding-top: 2%;
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+  .redes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+  }
+
+  footer a i {
+    font-size: 2em;
+    padding: 0.1em;
+  }
+
+  footer #facebook {
+    color: blue;
+  }
+
+  footer #instagram {
+    color: red;
+  }
+
+  footer #x {
+    color: black;
+  }
+
+  footer #whatsapp {
+    color: rgb(71, 247, 71);
+  }
+
+  footer #youtube {
+    color: red;
+  }
+
+  footer #e-mail {
+    font-size: 1em;
+  }
+
+  footer #llamar {
+    font-size: 1em;
+  }
+  .derechos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    text-align: center;
+  }
+

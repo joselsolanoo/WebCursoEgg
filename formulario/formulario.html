@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+    <script
+      src="https://kit.fontawesome.com/8d6b79b36f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="formulario.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/c9b87a4bee.js"
+      crossorigin="anonymous"
+    ></script>    
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <a href="/mi_primera_web/index.html"
+          ><img
+            class="logo"
+            src="https://scontent.fbog6-1.fna.fbcdn.net/v/t39.30808-6/448552483_10160412155944865_5670785525600948281_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeG9Qg_xfnduL0MlR0GGujPet76fwp2E_jO3vp_CnYT-M9wKuXkUVspQqprQvxPqsc8&_nc_ohc=pVvZV7kxHeMQ7kNvgEhOp9X&_nc_ht=scontent.fbog6-1.fna&oh=00_AYCeuXPdQRroq5kMiM29MXsydGKtgzb-i8icJo6we91pKQ&oe=6674A683"
+            alt="Logo J.L.S.O"
+        /></a>
+        <nav class="nav">
+          <input type="checkbox" id="check" />
+          <label for="check" class="checkbtn">
+            <i class="fa-solid fa-bars"></i>
+          </label>
+          <ul class="nav-list">
+            <li class="nav-item"><a href="/mi_primera_web/index.html">Inicio</a></li>            
+          </ul>
+        </nav>
+      </header>
+
+      <section>
+        <div class="formulario">
+            <form class="contact-form">
+                <h1>Contacto</h1>
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Correo Electrónico</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="subject">Asunto</label>
+                <input type="text" id="subject" name="subject" required>
+    
+                <label for="message">Mensaje</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+    
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+      </section>
+      
+
+      <footer>
+        <h3>Contacto</h3>
+        <div class="redes">
+          <a
+            id="facebook"
+            href="https://www.facebook.com/people/José-Luis-Solano-Ospino/100063530565186/"
+            target="_blank"
+          >
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a
+            id="instagram"
+            href="https://www.instagram.com/joselsolano"
+            target="_blank"
+          >
+            <i class="fa-brands fa-square-instagram"></i>
+          </a>
+          <a id="x" href="https://x.com/joselsolano" target="_blank">
+            <i class="fa-brands fa-square-x-twitter"></i>
+          </a>
+          <a
+            id="whatsapp"
+            href="https://api.whatsapp.com/send?phone=573004945523&data=AbuXcMBPC-9zDFeVTZtYu_iuj-yj7aODdzQMerC8Aqk4e6hH43pBgpmowG2qgsOiH1GhuaB3geOwjGugKPzjlu0owEgbSvOmG_ah1CwryzednWjtLx2djZVqh49UTj8IhUM&source=FB_Ads"
+            target="_blank"
+          >
+            <i class="fa-brands fa-square-whatsapp"></i>
+          </a>
+          <a
+            id="youtube"
+            href="https://www.youtube.com/channel/UCx8sSJf_4-CSGMZG33TqkWg"
+            target="_blank"
+          >
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+          <a id="e-mail" href="mailto:joselsolano@gmail.co"
+            ><i class="fa-regular fa-envelope"></i>
+          </a>
+
+          <a id="llamar" href="tel:+573004945523"
+            ><i class="fa-solid fa-phone"></i
+          ></a>
+        </div>
+        <div class="derechos">
+          <h2>©José Luis Solano Ospino 2024 Todos los derechos reservados.</h2>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
